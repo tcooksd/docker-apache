@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Forms Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: url('/images/image01.jpg') center/cover no-repeat fixed; /* Add background image */
+            opacity: 0.3; /* Set opacity */
+        }
+
+        form {
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #080202;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center; /* Center the text */
+        }
+
+        /* Form 1 takes 50% width */
+        .form-50 {
+            width: 100%;
+            background-color: rgb(18, 14, 14);
+            color: rgb(255, 255, 255);
+        }
+
+        @media (min-width: 600px) {
+            form {
+                width: 48%;
+            }
+
+            /* Form 1 takes 50% width on larger screens */
+            .form-50 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <form class="form-50">
+        <h2>Demo HTML from Docker</h2>
+        <!-- Form 1 content goes here -->
+    </form>
+
+    <form>
+        <h2>Form 2 Test</h2>
+        <!-- Form 2 content goes here -->
+    </form>
+
+    <form>
+        <h2>Form 3 Test</h2>
+        <!-- Form 3 content goes here -->
+    </form>
+
+</body>
+</html>
+
+
