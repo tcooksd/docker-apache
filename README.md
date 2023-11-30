@@ -1,6 +1,10 @@
 Docker Apache
 Docker is a prerequisite for testing.
 
+
+If you want to play with this and have no idea where to start , run the setup.sh script from a linux cli
+## ./setup.sh 
+
 The local-apache folder contains an images directory and index.html for the background image of the web page and the webpage itself.
 setup.sh is a basic shell script that you can run to check your system for Docker and provides instructions if it's not installed.
 The Dockerfile controls the build of the Docker container. Modify it if you want to make changes to the web page.
