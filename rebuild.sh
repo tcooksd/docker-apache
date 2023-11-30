@@ -30,7 +30,7 @@ check_command_status "docker run"
 open "http://localhost:8080" 
 check_command_status "Chrome open" 
  
-sleep 5 
+sleep 8 
 
 get_dockerid=$(docker ps | grep my-apache-server | awk '{print $1}')
 
@@ -40,6 +40,8 @@ echo "If you want to stop the docker process!        #"
 echo "################################################"
 echo ""
 echo "$ docker stop $get_dockerid"  
+echo ""
+echo "################################################"
 echo "or you can just rerun this script and get the same effect"
 echo "################################################"
 
