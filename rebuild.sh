@@ -30,7 +30,7 @@ check_command_status "docker run"
 open "http://localhost:8080" 
 check_command_status "Chrome open" 
  
-sleep 8 
+sleep 3 
 
 get_dockerid=$(docker ps | grep httpd-foreground | awk '{print $1}')
 
