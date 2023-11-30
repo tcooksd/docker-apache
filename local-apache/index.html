@@ -19,10 +19,10 @@
             box-sizing: border-box;
             padding: 20px;
             margin: 10px;
-            border: 1px solid #080202;
+            border: 1px solid #d61515;
             border-radius: 5px;
             text-align: center;
-            background: url('/images/monkey1.jpg') center/cover no-repeat ;
+            background: url('/images/monkey2.png') center/cover no-repeat ;
             background-size: cover;
             width: 100%; /* Set the initial width to 100% */
         }
@@ -31,6 +31,7 @@
             width: 50%; /* Both form1 and form2 take up 50% of the common-form width */
             background: url('/images/einstein1.jpg') center/cover no-repeat ;
             background-size: cover;
+            text-align: center;
             color: #fff; /* Text color for both forms */
             box-sizing: border-box; /* Include padding and border in the width calculation */
         }
@@ -45,7 +46,7 @@
                 width: 100%; /* Reset the width to auto for larger screens */
                 display: flex; /* Use flexbox for the side-by-side layout */
                 justify-content: space-between; /* Add space between form1 and form2 */
-                min-height: 200px;
+                min-height: 300px;
             }
 
             #form1, #form2 {
@@ -57,17 +58,40 @@
 <body>
 
     <form class="common-form">
-        <h2>Demo HTML from Docker</h2>
+        <h2><center>I am become ape, destroyer of complications!</center></h2>
+       
         <!-- Form 1 content goes here -->
     </form>
 
     <form id="form1" class="common-form">
-        <h2>Form 2 Test</h2>
+        <h2><center>Concepts in rental complications.</center></h2>
+        <table border="1">
+            <tr>
+                <th>B2B</th>
+                <th>Personal</th>
+                <th>Co Host</th>
+            </tr>
+            <tr>
+                <td>Laundry</td>
+                <td>Turn down</td>
+                <td>Managment</td>
+            </tr>
+            <tr>
+                <td>Turn down</td>
+                <td>Managment</td>
+                <td>Laundry</td>
+            </tr>
+            <tr>
+                <td>Managment</td>
+                <td>Laundry</td>
+                <td>Turn down</td>
+            </tr>
+        </table>
         <!-- Form 2 content goes here -->
     </form>
 
     <form id="form2" class="common-form">
-        <h2>Form 3 Test</h2>
+        <h2>Discusions from the wire. </h2>
         <!-- Form 3 content goes here -->
     </form>
 
