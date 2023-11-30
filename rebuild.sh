@@ -8,7 +8,7 @@ check_command_status() {
     fi
 }
 
-docker ps | grep my-apache-server > /dev/null
+docker ps | grep httpd-foreground > /dev/null
 if [ $? -eq 0 ]; then 
   running_pid=$(docker ps | awk '{print $1}' | grep -v CON)
   echo "################################################"
@@ -17,7 +17,7 @@ if [ $? -eq 0 ]; then
   echo "################################################"
   echo ""
   docker stop $running_pid > /dev/null
-  check_command_status "Stopping docker failed"
+  check_command_status "Stopping docker"
 fi 
 
 docker build -t my-apache-server .  > /dev/null 2>&1 &
@@ -32,7 +32,7 @@ check_command_status "Chrome open"
  
 sleep 8 
 
-get_dockerid=$(docker ps | grep my-apache-server | awk '{print $1}')
+get_dockerid=$(docker ps | grep httpd-foreground | awk '{print $1}')
 
 
 echo "################################################"
