@@ -1,59 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Two Forms Side by Side</title>
-    <style>
-        body {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background: url('/images/image01.jpg') center/cover no-repeat fixed;
-            opacity: 1.9;
-        }
-
-        /* Use a common class for styling shared by form1 and form2 */
-        .common-form {
-            box-sizing: border-box;
-            padding: 20px;
-            margin: 10px;
-            border: 1px solid #3c15d6;
-            border-radius: 5px;
-            text-align: center;
-            background: url('/images/monkey2.png') center/cover no-repeat ;
-            background-size: cover;
-            width: 100%; /* Set the initial width to 100% */
-        }
-
-        #form1, #form2 {
-            width: 50%; /* Both form1 and form2 take up 50% of the common-form width */
-            background: url('/images/einstein1.jpg') center/cover no-repeat ;
-            background-size: cover;
-            text-align: center;
-            color: #fff; /* Text color for both forms */
-            box-sizing: border-box; /* Include padding and border in the width calculation */
-        }
-
-        #form2 {
-            background: url('/images/einstein2.jpg') center/cover no-repeat ;
-            background-size: cover;
-        }
-
-        @media (min-width: 600px) {
-            .common-form {
-                width: 100%; /* Reset the width to auto for larger screens */
-                display: flex; /* Use flexbox for the side-by-side layout */
-                justify-content: space-between; /* Add space between form1 and form2 */
-                min-height: 300px;
-            }
-
-            #form1, #form2 {
-                width: 48%; /* Both form1 and form2 take up 48% of the common-form width */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -91,7 +42,7 @@
     </form>
 
     <form id="form2" class="common-form">
-        <h2>Discusions from the wire. </h2>
+        <h2>Discussions from the wire. </h2>
         <!-- Form 3 content goes here -->
     </form>
 

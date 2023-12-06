@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: url('/images/image01.jpg') center/cover no-repeat fixed;
+    opacity: 1.9;
+}
+
+.common-form {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #1518d6;
+    border-radius: 5px;
+    text-align: center;
+    background-size: cover;
+    background: url('/images/monkey2.png') center/cover no-repeat ;
+    width: 100%; /* Set the initial width to 100% */
+}
+
+#form1, #form2 {
+    width: 50%; /* Both form1 and form2 take up 50% of the common-form width */
+    text-align: center;
+    color: #fff; /* Text color for both forms */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+#form1 {
+    background: url('/images/einstein1.jpg') center/cover no-repeat ;
+}
+
+#form2 {
+    background: url('/images/einstein2.jpg') center/cover no-repeat ;
+}
+
+@media (min-width: 600px) {
+    .common-form {
+        width: 100%; /* Reset the width to auto for larger screens */
+        display: flex; /* Use flexbox for the side-by-side layout */
+        justify-content: space-between; /* Add space between form1 and form2 */
+        min-height: 300px;
+    }
+
+    #form1, #form2 {
+        width: 48%; /* Both form1 and form2 take up 48% of the common-form width */
+    }
+}
