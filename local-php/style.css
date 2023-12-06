@@ -1,0 +1,13 @@
+/* style.css */
+
+body {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: center;
+    min-height: 100vh; /* Use min-height to push the content down if it's smaller than the viewport */
+    margin: 0;
+}
+
+form {
+    text-align: center;
+}
