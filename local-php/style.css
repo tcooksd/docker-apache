@@ -4,8 +4,8 @@ body {
 }
 
 .top-frame {
-    background-color: #333; /* Change the background color as needed */
-    height: 140px; /* Change the height as needed */
+    background-color: #2fb81d; /* Change the background color as needed */
+    height: 40px; /* Change the height as needed */
     width: 100%;
     position: fixed;
     top: 0;
@@ -17,22 +17,26 @@ body {
     align-items: center;
 }
 
-/* Add additional styles for your form or other content */
-form {
+.horizontal-frame {
+    background-color: #2daacd; /* Change the background color as needed */
+    height: 100%;
+    width: 15%; /* Set to 1/5 of the viewport width */
+    position: fixed;
+    top: 0; /* Adjust based on the height of the top frame */
+    left: 0;
+    z-index: 999; /* Ensure the frame is above other elements */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 250px; /* Adjust the width of the form as needed */
 }
 
-form label, form input {
-    margin-bottom: 8px;
-    width: 100%; /* Make labels and inputs take up the full width */
+.hello-world {
+    font-weight: bold;
+    font-size: 20px; /* Adjust the font size as needed */
+    margin: 0;
 }
 
-form input[type="submit"] {
-    width: auto; /* Let the submit button be as wide as necessary */
-}
+
 
 
 
