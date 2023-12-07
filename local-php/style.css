@@ -4,14 +4,14 @@ body {
 }
 
 .top-frame {
-    background-color: #2fb81d; /* Change the background color as needed */
+    background-color: #eaf7e8; /* Change the background color as needed */
     height: 40px; /* Change the height as needed */
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure the frame is above other elements */
-    color: white; /* Change the text color as needed */
+    color: rgb(201, 28, 28); /* Change the text color as needed */
     display: flex;
     justify-content: center; /* Center the form horizontally */
     align-items: center;
