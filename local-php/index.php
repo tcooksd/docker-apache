@@ -8,7 +8,7 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body <?php if ($_SERVER["REQUEST_METHOD"] == "POST") echo 'class="submitted"'; ?>>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the submitted form data
@@ -50,6 +50,7 @@
     ?>
 </body>
 </html>
+
 
 
 
