@@ -5,15 +5,16 @@ body {
 
 .top-frame {
     background-color: #333; /* Change the background color as needed */
-    height: 200px; /* Change the height as needed */
+    height: 140px; /* Change the height as needed */
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure the frame is above other elements */
     color: white; /* Change the text color as needed */
-    text-align: center;
-    line-height: 200px; /* Center text vertically within the frame */
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center;
 }
 
 /* Add additional styles for your form or other content */
@@ -21,14 +22,17 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 250px; /* Adjust the width of the form as needed */
 }
 
 form label, form input {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    width: 100%; /* Make labels and inputs take up the full width */
 }
 
-form input[type="text"], form input[type="submit"] {
-    width: 200px; /* Adjust the width of the inputs as needed */
-    padding: 8px;
+form input[type="submit"] {
+    width: auto; /* Let the submit button be as wide as necessary */
 }
+
+
 
